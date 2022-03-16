@@ -11,8 +11,8 @@ function App() {
   console.log(isLoggedIn)
   return (
     <div className="App">
-      {/* <Auth /> */}
-      <Layout />
+      {! isLoggedIn &&  <Auth/> }
+    { isLoggedIn &&  <Layout />}
     </div>
   );
 }
