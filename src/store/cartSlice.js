@@ -33,7 +33,7 @@ import { createSlice } from "@reduxjs/toolkit";
             state.quantity -=action.payload
         },
         setShowCart(state) {
-            state.showCart = true;
+            state.showCart = !state.showCart;
         } 
     }
 
